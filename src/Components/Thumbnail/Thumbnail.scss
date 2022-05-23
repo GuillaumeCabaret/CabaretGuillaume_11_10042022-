@@ -1,0 +1,32 @@
+.thumbnail {
+    position: relative;
+    width: 355px;
+    height: 355px;
+    background-color: #FF6060;
+    background: linear-gradient(180deg, #FF6060 0%, #b34343 100%);
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+
+    img {
+    width: 355px;
+    height: 355px;
+    object-fit: cover;
+    }
+
+    @media screen and (max-width: 600px){
+        width: 355px;
+        height: 355px;
+    }
+    &__title {
+        font-size: 18pt;
+        position: absolute;
+        left: 15px;
+        bottom: 20px;
+        color: white;
+        text-shadow: 1px 1px 2px #000000;
+       
+    }
+}

@@ -1,0 +1,40 @@
+.dropdown {
+    width: 100%;
+    max-width: 582px;
+    position: relative;
+    margin-bottom: 50px;
+    margin-right: 20px;
+   
+
+    @media screen and (max-width: 600px){
+        margin-bottom: 20px;
+        width: 335px;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        width: inherit;
+        background-color: #FF6060;
+        color: white;
+        font-size: 14pt;
+        height: 40px;
+        border-radius: 10px;
+        border: none;
+        text-align: left;
+        padding: 0 10px;
+        position: relative;
+        z-index: 4;
+       
+    }
+
+    &__content {
+        color: #FF6060;
+        background-color: #F6F6F6;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: -10px;
+    }
+}

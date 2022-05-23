@@ -1,0 +1,21 @@
+.details__host {       
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 600px){
+        order: 4;
+    }
+    
+    &__name {
+        width: 100px;
+        color : #FF6060;
+        word-spacing:500px; 
+    }
+
+    &__picture {
+        border-radius: 50%;
+        overflow: hidden;
+        height: 64px;
+        width: 64px;
+    }
+}

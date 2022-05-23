@@ -1,0 +1,28 @@
+.tag {
+    border-radius: 10px;
+    background-color: #FF6060;
+    margin: 10px;
+    min-width: 115px;
+    width: fit-content;
+    padding: 0 15px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        @media screen and (max-width: 600px){
+            flex-wrap: wrap;
+            max-width: 350px;
+         }
+    }
+    p {
+        color: white;
+        text-align: center;
+        font-size: 14pt;
+        @media screen and (max-width: 600px){
+            font-size: 10pt;
+         }
+    }
+}

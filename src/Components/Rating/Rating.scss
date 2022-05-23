@@ -1,0 +1,13 @@
+.rating {
+    display: flex;
+    width: 200px;
+    @media screen and (max-width: 600px){
+       width: auto;
+     }
+
+    img {
+        height: 24px;
+        width: 24px;
+    }
+    
+}
