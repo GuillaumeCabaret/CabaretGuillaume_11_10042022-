@@ -2,7 +2,7 @@ import React from "react";
 import Host from "../Host/Host";
 import Tag from "../Tag/Tag";
 import Rating from "../Rating/Rating";
-import Dropdown from "../Dropdown/Dropdown";
+import Collapse from "../Collapse/Collapse";
 
  class Details extends React.Component {
 
@@ -21,13 +21,13 @@ import Dropdown from "../Dropdown/Dropdown";
             </div>
             <Rating rating={this.props.rating}/>
           </div>
-          <div className="dropdown__wrapper">
-            <Dropdown title={"Description"}>
+          <div className="collapse__wrapper">
+            <Collapse title={"Description"}>
             {this.props.description}
-            </Dropdown>
-            <Dropdown title={"Equipements"}>
+            </Collapse>
+            <Collapse title={"Equipements"}>
             {equipementContent}
-            </Dropdown> 
+            </Collapse> 
           </div>
       </>
     );

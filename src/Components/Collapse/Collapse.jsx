@@ -1,6 +1,6 @@
 import React from "react";
 
-class Dropdown extends React.Component {
+class Collapse extends React.Component {
 
     constructor(props){
       super(props);
@@ -17,15 +17,15 @@ class Dropdown extends React.Component {
     render() {
       
       return (
-        <div className="dropdown">
-          <button className="dropdown__button" onClick={this.drop}>{this.props.title} {this.state.children ?
+        <div className="collapse">
+          <button className="collapse__button" onClick={this.drop}>{this.props.title} {this.state.children ?
            <i className="fas fa-angle-up"></i> 
            : <i className="fas fa-angle-down"></i>} 
            </button>
-            {this.state.dropped ? <div className="dropdown__content"> <ul>{this.props.children}</ul></div> : null}
+            {this.state.dropped ? <div className="collapse__content"> <ul>{this.props.children}</ul></div> : null}
         </div>
       );
     }
   }
 
-  export default Dropdown;
+  export default Collapse;
